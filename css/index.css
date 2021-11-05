@@ -1,0 +1,186 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600&display=swap");
+* {
+	box-sizing: border-box;
+}
+:root {
+	--main-padding: 10px;
+	--main-color: #22a6b3;
+}
+body {
+	margin: 0;
+	font-family: "Nunito", sans-serif;
+}
+/*start component*/
+.custom h2 {
+	margin: 0;
+	font-size: 30px;
+	color: rgb(119, 117, 117);
+	font-variant: small-caps;
+	letter-spacing: 1.5px;
+}
+.custom i {
+	font-size: 20px;
+	margin-right: 10px;
+	color: var(--main-color);
+}
+.exp {
+	text-align: start;
+	padding: 10px 25px 0px;
+}
+.exp:not(:last-of-type) {
+	border-bottom: 1px solid #ddd;
+}
+.exp h3 {
+	margin: 0;
+	font-variant: small-caps;
+	font-size: 21px;
+	letter-spacing: 1.5px;
+	margin-bottom: 3px;
+}
+.exp .icon {
+	color: var(--main-color);
+}
+.exp .icon i {
+	margin-right: 10px;
+}
+.exp p {
+	margin-top: 3px;
+}
+.progress h3 {
+	margin: 0px;
+	font-size: 18px;
+	font-variant: small-caps;
+	letter-spacing: 1.5px;
+}
+.progress .outer {
+	background-color: rgb(223, 223, 223);
+	border-radius: 10px;
+	height: 17px;
+	overflow: hidden;
+}
+.progress .inner {
+	text-align: end;
+	font-size: 13px;
+	background-color: var(--main-color);
+	color: rgb(236, 234, 234);
+}
+.progress:first-of-type .inner {
+	width: 90%;
+}
+.progress:nth-of-type(2) .inner {
+	width: 70%;
+}
+.progress:nth-of-type(3) .inner {
+	width: 50%;
+}
+.progress:last-of-type .inner {
+	width: 80%;
+}
+/*end component*/
+.container {
+	height: 100vh;
+	position: relative;
+}
+.flex {
+	display: flex;
+	height: 91%;
+}
+.flex > div {
+	text-align: center;
+	color: rgb(172, 169, 169);
+}
+/*start the pic div*/
+.flex > div.one {
+	background-color: #fff;
+	flex-basis: 450px;
+	margin-right: 10px;
+	box-shadow: 3px 8px 7px rgb(192, 192, 192);
+}
+.flex > div.one .pic {
+	height: 200px;
+	background-image: url("../img/pic1.jpg");
+	background-size: cover;
+}
+.flex > div.one .information {
+	padding: var(--main-padding);
+	text-align: start;
+	font-variant: small-caps;
+}
+.flex > div.one .information > div {
+	display: flex;
+	align-items: center;
+}
+.flex > div.one .information > div i {
+	flex-basis: 30px;
+	color: var(--main-color);
+}
+.flex > div.one .information > div:not(:last-child) span {
+	font-size: 18px;
+	letter-spacing: 1.5px;
+}
+.flex > div.one .skills,
+.flex > div.one .languages {
+	padding: var(--main-padding);
+	padding-top: 0px;
+	text-align: start;
+}
+.flex > div.one .skills h2,
+.flex > div.one .languages h2 {
+	margin: 0;
+	font-size: 25px;
+	font-variant: small-caps;
+	letter-spacing: 1.5px;
+	color: rgb(119, 117, 117);
+}
+.flex > div.one .skills h2 i,
+.flex > div.one .languages h2 i {
+	color: var(--main-color);
+	font-size: 19px;
+	margin-right: 10px;
+}
+/*start work experience and education*/
+.flex > div.content {
+	margin-right: 0;
+	align-items: unset;
+	flex-grow: 1;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 10px;
+}
+.flex .content > div {
+	width: 100%;
+	box-shadow: 4px 5px 7px rgb(192, 192, 192);
+}
+.flex .content > div.two {
+	padding: var(--main-padding);
+	text-align: start;
+	background-color: #fff;
+}
+.flex .content > div.three {
+	padding: var(--main-padding);
+	text-align: start;
+	background-color: #fff;
+}
+/*start the footer*/
+footer {
+	height: 8%;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	background-color: var(--main-color);
+	text-align: center;
+	color: #fff;
+}
+footer p {
+	margin-bottom: 2px;
+}
+footer i {
+	transition: all 0.5s ease-in-out;
+	display: inline-block;
+	margin: 0px 10px;
+	cursor: pointer;
+}
+footer i:hover {
+	transform: scale(1.3);
+}
